@@ -1,0 +1,278 @@
+*, 
+*::after, 
+*::before{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    background-image: url(./assets/texture-elegante-blanche-fond-degradation-blanche_1016686-101378.jpg);
+    background-attachment: fixed;
+}
+
+
+h1{
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+}
+
+header{
+    height: 100px;
+}
+
+header p{
+    text-align: center;
+    text-transform: uppercase;
+}
+    
+
+footer{
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(66, 57, 61);
+    border-top: 3px solid #503e3e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+nav li{
+     list-style-type: none;
+     float: left;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(71, 67, 59);
+    padding-left: 300px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 20px 30px ;
+    color: aliceblue;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.bloc{
+    display: table;
+    margin: O auto;
+}
+
+.menu-acc:hover{
+    border-top: 5px solid #cab9f8;
+    background-color: rgba(45, 105, 200, 0.15);
+}
+
+.menu-loc:hover{
+    border-top: 5px solid #aa4141;
+    background-color: rgba(175, 191, 199, 0.15);
+}
+
+.menu-cli:hover{
+    border-top: 5px solid #796972;
+    background-color: rgba(121, 179, 107, 0.15);
+}
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+.reservation{
+    height: 100px;
+}
+
+.center{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.lienres{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 3px ridge #aaa;
+    border-radius: 10px;
+    background-color: rgba(198, 206, 216, 0.5);
+    float: right;
+    height: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+section h1{
+    color: #3b3b39;
+    text-align: center;
+}
+
+.centerpre{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.presentation{
+    width: 100%;
+    background-color: #bdbcb0;
+}
+
+.services{
+    width: 100%;
+    background-color: #bddbe7;
+}
+
+div h3{
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.centerser{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.sec{
+    width: 100%;
+    background-color: #8f7777;
+}
+
+.avantage{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.pied{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.left, .centerp, .right, .last{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+img {
+    width: 300px;
+} 
+/* Pour mettre sur le meme alignement des elements d'un meme bloc */ 
+.voiture, .vehicule, .outil{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.sous{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8Ec2;
+}   
+/* pour donner une mem taille aux images */
+.voi{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.voi img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.veh{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.veh img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.out{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+.out img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+/* /fin du commentaire */
+/* transition de couleur sur le bouton reserver maintenant */
+.lienres{
+    background-color: rgb(134, 151, 147);
+}
+.lienres:hover{
+    background-color: #bddbe7;
+    transition: all 300ms ease;
+}
+
+#sec1{
+    background-color: rgba(186, 211, 74, 0.7);
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+#sec2{
+    background-color: rgba(243, 245, 128, 0.7);
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+#sec1:hover, #sec2:hover{
+    box-shadow: 0px 0px 0px #444;
+}
+
+legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 15px;
+    color: #324;
+}
+
+input{
+    width: 300px;
+    height: 20px;
+}
+
+label{
+    display:inline-block;
+    width: 200px;
+    padding: 10px 0px 15px 40px;
+}
+
+input[type="submit"]{
+   
+}

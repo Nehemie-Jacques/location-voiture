@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>VROUM AUTO</title>
+  </head>
+  <body>
+    <div class="fixe">
+      <header>
+        <div class="titre">
+          <h1>VROUM AUTO</h1>
+          <p>Votre site de location de vehicules.</p>
+        </div>
+      </header>
+      <nav>
+        <div class="bloc">
+          <ul>
+            <li class="menu-acc">
+              <a href="ACCEUIL.html">ACCEUIL</a>
+            </li>
+            <li class="menu-loc">
+              <a href="LOCATION.html">LOCATION DE VEHICULES</a>
+            </li>
+            <li class="menu-cli">
+              <a href="CLIENT.html">SUPPORT CLIENT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1>FICHE DE RENSEIGNEMENT</h1>
+      <form method="post" action="traitement.php">
+        <fieldset id="sec1">
+          <legend>Information personnelles</legend>
+          <h2 class="tif">Renseignement personnel</h2>
+          <label for="NOM">Entrez votre nom </label>
+          <input type="text" id="NOM" name="NOM" /><br />
+
+          <label for="PRENOM">Entrez votre prenom</label>
+          <input type="text" id="PRENOM" name="PRENOM" /><br />
+
+          Quel est votre sexe: <br />
+          <label for="homme"> Homme</label>
+          <input type="radio" id="homme" name="sexe" value="homme" /><br />
+          <label for="femme">Femme</label>
+          <input type="radio" id="femme" name="sexe" value="femme" /><br />
+
+          <label for="age">Quel est votre age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="20"
+            max="80"
+            placeholder="ans"
+          /><br />
+
+          <label for="CNI">Entrez votre numero de CNI</label>
+          <input
+            type="text"
+            id="CNI"
+            name="CNI"
+            required="required"
+            placeholder="kit120"
+          /><br />
+
+          <label for="tel">Entrez votre numero de telephone</label>
+          <input type="number" id="tel" name="tel" /><br />
+
+          <label for="email">Entrez votre Eamil</label>
+          <input
+            type="text"
+            id="email"
+            name="eamil"
+            placeholder="@gamil.com"
+          /><br />
+
+          <label for="adresse">Precisez votre adresse</label>
+          <input type="text" id="adresse" name="adresse" /><br />
+        </fieldset>
+
+        <fieldset id="sec2">
+          <legend>Information vehicule</legend>
+          <h2 class="tif">Renseignement sur le vehicule</h2>
+          <label for="marque">Quelle est la marque du vehicule</label>
+          <input
+            type="text"
+            id="marque"
+            name="marque"
+            placeholder="Toyota"
+          /><br />
+
+          <label for="agence">Precisez l'agence de location</label>
+          <input
+            type="text"
+            id="agence"
+            name="agence"
+            placeholder="Ekounou"
+          /><br />
+
+          Service:
+          <label for="location">Location</label>
+          <input
+            type="checkbox"
+            id="Location"
+            name="service"
+            value="Location"
+          />
+          <label for="achat">Achat</label>
+          <input type="checkbox" id="Achat" name="service" value="Achat" />
+          <br />
+
+          Chauffeur:
+          <label for="oui">Oui</label>
+          <input type="radio" id="oui" name="chauffeur" value="oui" />
+          <label for="non">Non</label>
+          <input type="radio" id="non" name="cahuffeur" value="non" /> <br />
+
+          <label for="immatriculation"
+            >Quelle est l'immatriculation du vehicule</label
+          >
+          <input
+            type="text"
+            id="immatriculation"
+            name="imamtriculation"
+            required="required"
+            placeholder="CE 230 QI"
+          /><br />
+
+          <label for="permi">Numero du permi</label>
+          <input
+            type="number"
+            id="permi"
+            name="permi"
+            required="required"
+          /><br />
+
+          <label for="date">Precise la date d'acquisition du vehicule</label>
+          <input type="text" id="date" name="date" /> <br />
+
+          <label for="duree">Quelle est la durée de locationdu vehicule </label>
+          <input type="text" id="duree" name="duree" /> <br />
+
+          <label for="banque">Pecise votre numero bancaire</label>
+          <input type="number" id="banque" name="banque" /> <br />
+        </fieldset>
+
+        <input type="submit" value="ENVOYER" />
+      </form>
+    </div>
+    <footer>
+      <div class="pied">
+        <div class="left">
+          <h1>Nos services</h1>
+          <p>location de voiture</p>
+          <p>Vente de voiture</p>
+          <p>Accompagnement touristiquep</p>
+          <p>Vente de pices détachées</p>
+        </div>
+        <div class="centerp">
+          <h1>Contactez-nous</h1>
+          <p>+237621004408 <br />+237691627740</p>
+          <p>vroumauto@gmail.com</p>
+        </div>
+        <div class="right">
+          <h1>Paiement</h1>
+        </div>
+      </div>
+      <p class="last">
+        Copyright OCTOBRE2024 @VROUM AUTO. Tous les droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>
